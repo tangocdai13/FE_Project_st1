@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins";
+}
+
+/*Common  */
+.content {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    height: 100vh;
+    background-color: #E6F0FF;
+}
+
+/* Header */
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar .actions {
+    margin-left: auto;
+}
+
