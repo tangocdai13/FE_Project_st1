@@ -2,37 +2,160 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #0f1b4c;
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
     font-size: 1.6rem;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
 }
 
-/*Common  */
+/*======================= Common ============================ */
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 98px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #ffffff;
+    padding: 18px 16px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
 .content {
-    width: 1440px;
+    width: 1110px;
+    max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
 }
 
 .header {
+    position: relative;
     height: 100vh;
     background-color: #E6F0FF;
 }
 
-/* Header */
+/*======================= Header ============================ */
+
 .navbar {
     display: flex;
+    align-items: center;
+    padding-top: 38px;
 }
 
 .navbar ul {
     display: flex;
+    margin-left: 50px;
+}
+
+.navbar ul li:hover a {
+    text-decoration: underline;
+}
+
+.navbar ul a {
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 8px 14px;
+    color: #4f5361;
 }
 
 .navbar .actions {
     margin-left: auto;
 }
 
+.actions .action-link {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.navbar .action-btn {
+    padding: 13px 16px;
+    margin-left: 18px;
+}
+
+/*======================= Hero ============================ */
+.hero {
+    margin-top: 130px;
+}
+
+.hero .info {
+    width: 51%;
+}
+
+.hero .sub-title {
+    color: #687690;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.18px;
+}
+
+.hero .title {
+    margin-top: 8px;
+    color: #000336;
+    font-size: 6.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 118.75%;
+}
+
+.hero .desc {
+    color: #5A6473;
+    margin-top: 30px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 177.778%;
+}
+
+.hero-cta {
+    margin-top: 40px;
+    min-width: 170px;
+}
+
+.hero-img {
+    position: absolute;
+    bottom: 0;
+    right: calc((100vw - 1110px) / 2 - 100px);
+}
+
+/*======================= Clients ============================ */
+.clients {
+    margin-top: 79px;
+    height: 1000px;
+}
+
+.clients .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients .desc {
+    margin-top: 23px;
+    color: #7D8589;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.clients .images {
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
